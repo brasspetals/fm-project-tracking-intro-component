@@ -1,0 +1,51 @@
+$color-red: hsl(0, 100%, 68%);
+$color-red-dark: hsl(0, 83%, 60%);
+$color-blue-dark: hsl(230, 29%, 20%);
+$color-gray-dark: hsl(230, 11%, 40%);
+$color-gray: hsl(231, 7%, 65%);
+$color-gray-light: hsl(207, 33%, 95%);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* if default browser font is 16px, this sets it to 10px (1rem = 10px) */
+  overflow-x: hidden; // Chrome fix
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: $color-gray-dark;
+  position: relative;
+  overflow-x: hidden;
+
+  &::before {
+    content: '';
+    background-color: $color-gray-light;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 42.7rem;
+    border-radius: 0 0 0 6.3rem;
+    z-index: -10;
+
+    @media only screen and (min-width: 800px) {
+      width: 48.8%;
+      height: 42.7rem;
+    }
+  }
+}

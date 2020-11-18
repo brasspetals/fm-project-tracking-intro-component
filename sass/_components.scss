@@ -1,0 +1,56 @@
+.btn {
+  &--menu {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+
+    @media only screen and (min-width: 800px) {
+      display: none;
+    }
+
+    &--close {
+      position: absolute;
+      top: -2px;
+      left: 2px;
+    }
+
+    &:hover svg *,
+    &:focus svg * {
+      fill: $color-red;
+      transition: all .4s;
+    }
+  }
+
+  &--cta {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    background-color: $color-red;
+    border-radius: 5px;
+    padding: 1.1rem 2.45rem;
+    font-size: 1.4rem;
+    letter-spacing: .9px;
+    margin-right: 2rem;
+    transition: all .4s;
+
+    @media only screen and (min-width: 1200px) {
+      border-radius: 7px;
+      padding: 14.4px 32px;
+      font-size: 17px;
+      letter-spacing: .7px;
+      margin-right: 2.3rem;
+    }
+
+    &:hover {
+      background-color: lighten($color-red, 5%);
+    }
+  }
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}

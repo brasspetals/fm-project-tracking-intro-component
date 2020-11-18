@@ -1,0 +1,60 @@
+.nav,
+.heading,
+.tag,
+.description--title,
+.btn--cta,
+.description--cta {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+}
+
+.tag {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: $color-blue-dark;
+  border-radius: 2rem;
+  padding: .4rem 1rem;
+  margin-right: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.description {
+  &--title {
+    color: $color-gray;
+    letter-spacing: .5rem;
+    font-size: 1.5rem;
+  }
+
+  &--cta {
+    color: $color-gray;
+    font-size: 1.4rem;
+    letter-spacing: .25rem;
+
+    @media only screen and (min-width: 1200px) {
+      font-size: 1.6rem;
+      letter-spacing: .46rem;
+    }
+  }
+}
+
+.heading {
+  min-height: 0vw; // Safari fluid typography fix
+  color: $color-blue-dark;
+  margin: 1.6rem 0;
+  font-size: clamp(4rem, 10.66vw, 6.4rem);
+  line-height: 1;
+
+  @media only screen and (min-width: 800px) {
+    font-size: clamp(4rem, 5vw, 6.4rem);
+  }
+}
+
+.subheading {
+  line-height: 1.41;
+
+  @media only screen and (min-width: 1200px) {
+    line-height: 1.45;
+    padding-top: 1.6rem;
+  }
+}

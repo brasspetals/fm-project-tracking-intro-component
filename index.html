@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/styles.min.css">
+  
+  <title>Frontend Mentor | Project tracking intro component</title>
+
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <img class="header__logo" src="./images/logo.svg" alt="logo">
+      <button class="btn--menu" aria-label="menu toggle">
+        <svg class="btn--menu--open" xmlns="http://www.w3.org/2000/svg" width="24" height="16"><g fill="#242942" fill-rule="evenodd"><path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/></g></svg>
+
+        <svg class="btn--menu--close hide" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#242942" fill-rule="evenodd" d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z"/></svg>
+      </button>
+      <nav class="nav nav-toggle">
+        <ul>
+          <li class="nav__link"><a href="#">Product</a></li>
+          <li class="nav__link"><a href="#">Features</a></li>
+          <li class="nav__link"><a href="#">Pricing</a></li>
+          <li class="nav__login"><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="hero__container">
+    <div class="hero__img">
+      <img src="./images/illustration-devices.svg" alt="electronic devices illustration">
+    </div>
+    <div class="hero__content">
+      <div class="title-container">
+        <p class="tag">New</p>  
+        <p class="description--title">Monograph Dashboard</p>
+      </div>
+
+      <h1 class="heading">
+        Powerful insights into your team
+      </h1>
+      <p class="subheading">
+        Project planning and time tracking<br>for agile teams
+      </p>
+
+      <div class="cta">
+        <a href="#" class="btn--cta">Schedule a demo</a>
+        <p class="description--cta">to see a preview</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
