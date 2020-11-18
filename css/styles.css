@@ -198,8 +198,9 @@ body::before {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1rem 2rem rgba(38, 9, 9, 0.15);
+          box-shadow: 0 1rem 2rem rgba(38, 9, 9, 0.15);
+  border-radius: 3px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -273,7 +274,7 @@ body::before {
     margin-left: 1.2rem;
   }
   .nav__login::marker {
-    color: #a0a1ac;
+    color: rgba(160, 161, 172, 0.4);
   }
 }
 
